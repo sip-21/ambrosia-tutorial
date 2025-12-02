@@ -4,8 +4,14 @@ sidebar_position: 1
 slug: /
 ---
 
-# How to build a tiny self-custodial node to accept Lightning in your shop
+# Ambrosia Tutorial
 
-A tutorial for installing Phoenixd and LNBits on an OrangePi Zero 2W and using Zeus Wallet as the PoS app.
+A tutorial for installing Ambrosia (Point of Sale), configure and use it.
 
-Alternatively, you can use Albyhub and/or LDK, instead of LNBits and/or Phoenixd.
+## Cost:
+- If you're just using a **laptop**
+  - ~$FREE
+
+### Laptop
+- Works on Linux, Mac, or (even!) Windows
+- Feel free to use one of these just to learn, though keep in mind you will want something that you can leave powered on and connected to the internet 24/7 if you really want to use this in a shop, though.
