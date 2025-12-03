@@ -8,7 +8,7 @@ slug: /
 
 A tutorial for installing Ambrosia (Point of Sale), configure and use it.
 
-## Cost:
+### Cost:
 - If you're just using a **laptop**
   - ~$FREE
 
