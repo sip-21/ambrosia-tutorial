@@ -48,6 +48,9 @@ sudo apt update
 # Install Docker
 sudo apt install docker.io
 
+# Install Docker Compose
+sudo apt install docker-compose
+
 # Add your user to the docker group (allows running Docker without sudo)
 sudo usermod -aG docker $USER
 
@@ -155,16 +158,10 @@ Run the following commands to download Ambrosia:
 
 ```bash
 # Clone the repository from GitHub
-git clone https://github.com/sip-21/ambrosia.git
+git clone https://github.com/olympus-btc/ambrosia.git
 
 # Navigate into the project directory
 cd ambrosia
-
-# Fetch all branches from the repository
-git fetch origin use-multi-stage-docker-build
-
-# Switch to the Docker-enabled branch
-git checkout use-multi-stage-docker-build
 ```
 
 ### Verify the Files
@@ -223,3 +220,11 @@ Congratulations! Ambrosia is now running on your system.
 2. Navigate to: **http://localhost:3000**
 3. You should see the Ambrosia onboarding screen
 
+### Stopping Ambrosia
+
+When you're done using Ambrosia, you can stop the containers:
+
+```bash
+# Stop all containers
+docker-compose stop
+```
