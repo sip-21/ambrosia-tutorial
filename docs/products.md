@@ -1,5 +1,5 @@
 ---
-title: "Products Management"
+title: "Product Management"
 sidebar_position: 5
 slug: /products
 ---
