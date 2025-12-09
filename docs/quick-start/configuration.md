@@ -68,7 +68,7 @@ Lightning Electronics
 - Currency
 - Store Logo
 
-### Click Next then the Finish button to complete the setup
+### Click Next, then click Finish to complete the setup
 
 Congratulations! You've successfully configured your Ambrosia Point of Sale system.
 
