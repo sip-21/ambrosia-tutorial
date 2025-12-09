@@ -12,7 +12,7 @@ slug: /quickinstallation
 - **Disk Space**: 2GB free space
 - **Network**: Internet connection
 
-# Step 1: Install Docker
+# Step 1: Install dependencies (Docker, git & curl)
 
 ## For Linux (Ubuntu/Debian)
 
@@ -22,8 +22,8 @@ Open your terminal and run the following commands:
 # Update package list
 sudo apt update
 
-# Install Docker
-sudo apt install curl docker.io
+# Install Docker and Git
+sudo apt install -y curl docker.io git
 
 # Install Docker Compose
 sudo curl -L "https://github.com/docker/compose/releases/latest/download/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
@@ -34,9 +34,6 @@ sudo usermod -aG docker $USER
 
 # Refresh your user session to apply group changes
 su - $USER
-
-# Install git
-sudo apt install -y docker.io curl git
 ```
 
 ## For macOS
@@ -152,39 +149,6 @@ Write down your seed and put it somewhere secret/safe (**VERY IMPORTANT BEFORE P
 ```
 docker exec -it phoenixd cat /phoenix/.phoenix/seed.dat
 ```
-
-#### Open a channel/Get inbound liquidity
-By default, phoenixd will request 2Msat of inbound liquidity from the ACINQ LSP, whenever it runs out of inbound liquidity. This of course includes when you first start the node and receive your very first payment. ACINQ charges 1% of the amount of inbound liquidity requested, which is 20ksat (plus the mining fee). Since 20ksat is about US$20 at the time of writing, and since we don't need this much inbound liquidity for a workshop, we instead configure phoenixd not to request inbound liquidity.
-
-*(Note: if you actually want 2M sats of inbound liquidity, just omit this. If you go this route, you should send ~25ksats as your first payment, most of which will be taken by ACINQ for the fee)*:
-
-Edit the phoenixd config:
-```
-sudo nano "$(docker inspect -f '{{ range .Mounts }}{{ if eq .Destination "/phoenix" }}{{ .Source }}/.phoenix/phoenix.conf{{ end }}{{ end }}' phoenixd)"
-```
-Add these two lines to the config file (this should be fine as long as mining fees are lower than 5k):
-```
-auto-liquidity=off
-max-mining-fee=5000
-```
-
-Now save and exit (ctrl+s, ctrl+x).
-
-Restart your container to pick up the new settings:
-```
-docker restart phoenixd
-```
-
-Next, we deposit 5ksats into our node:
-```
-docker exec -it phoenixd /phoenix/bin/phoenix-cli createinvoice --amountSat=5000 --desc="initial deposit"
-```
-- Copy the resulting bolt11 (`lnbc...`)
-- Create a QR of your bolt11:
-```
-qrencode -t ANSIUTF8 <lnbc....>
-```
-- Scan it with your lightning wallet and pay
 
 # Step 6: Access Ambrosia
 

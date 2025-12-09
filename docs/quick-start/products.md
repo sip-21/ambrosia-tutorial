@@ -64,9 +64,3 @@ Common quick edits:
 - Increase stock  
 - Change price  
 - Update description
-
-## 4. Delete a Product
-1. Click **Delete (trash)**  
-2. Confirm  
-
-**Tip**: Instead of deleting, you can set stock to `0` if you might sell it again.
