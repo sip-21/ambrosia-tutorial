@@ -38,7 +38,7 @@ Admin
 
 **PIN Example**:
 ```
-1234
+0000
 ```
 
 ### Password
