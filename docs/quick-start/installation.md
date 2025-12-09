@@ -96,14 +96,9 @@ Now we'll download the Ambrosia source code from GitHub.
 
 ## Navigate to Your Preferred Directory
 
-First, decide where you want to install Ambrosia. For example:
-
 ```bash
-# Option 1: Install in your home directory
+# Install in your home directory
 cd ~
-
-# Option 2: Install in a specific projects folder
-cd ~/projects
 ```
 
 ## Clone the Repository
