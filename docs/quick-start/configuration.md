@@ -17,6 +17,10 @@ If at anytime the page freezes please hit Refresh on your browser
 ### Store
 - Recommended for: Retail shops, boutiques, hardware stores, electronics shops, Bitcoin merchandise stores
 
+:::info
+Restaurant is unavailable at the moment
+:::
+
 ## Step 2: Create Your Admin Account
 
 This step creates the primary administrator account for your POS system. This account will have full access to all features and settings.
@@ -64,7 +68,7 @@ Lightning Electronics
 - Currency
 - Store Logo
 
-### Click the Finish button to complete the setup
+### Click Next then the Finish button to complete the setup
 
 Congratulations! You've successfully configured your Ambrosia Point of Sale system.
 
