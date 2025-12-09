@@ -96,14 +96,9 @@ Now we'll download the Ambrosia source code from GitHub.
 
 ## Navigate to Your Preferred Directory
 
-First, decide where you want to install Ambrosia. For example:
-
 ```bash
-# Option 1: Install in your home directory
+# Install in your home directory
 cd ~
-
-# Option 2: Install in a specific projects folder
-cd ~/projects
 ```
 
 ## Clone the Repository
@@ -136,7 +131,7 @@ You should see files including:
 From the `ambrosia` directory, run:
 
 ```bash
-docker-compose up -d
+docker-compose up -d --wait && docker-compose restart
 ```
 
 **This process may take 3-5 minutes on first run**, especially on slower internet connections. Subsequent starts will be much faster.
@@ -161,12 +156,7 @@ docker exec phoenixd sh -c "\
   echo 'auto-liquidity=off' >> /phoenix/.phoenix/phoenix.conf && \
   sed -i '/^max-mining-fee=/d' /phoenix/.phoenix/phoenix.conf && \
   echo 'max-mining-fee=5000' >> /phoenix/.phoenix/phoenix.conf \
-"
-```
-
-Restart your container to pick up the new settings:
-```
-docker restart phoenixd
+" && docker restart phoenixd
 ```
 
 # Step 7: Access Ambrosia
@@ -174,3 +164,7 @@ docker restart phoenixd
 1. Open your web browser (Chrome, Firefox, Safari, Edge, etc.)
 2. Navigate to: **http://localhost:3000**
 3. You should see the Ambrosia onboarding screen
+
+:::warning
+You may need to turn off your VPS if page is not loading
+:::

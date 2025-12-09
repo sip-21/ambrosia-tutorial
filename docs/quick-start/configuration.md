@@ -17,8 +17,9 @@ If at anytime the page freezes please hit Refresh on your browser
 ### Store
 - Recommended for: Retail shops, boutiques, hardware stores, electronics shops, Bitcoin merchandise stores
 
-### Restaurant
-- Recommended for: Restaurants, cafes, food trucks, bars, coffee shops
+:::info
+Restaurant is unavailable at the moment
+:::
 
 ## Step 2: Create Your Admin Account
 
@@ -37,7 +38,7 @@ Admin
 
 **PIN Example**:
 ```
-1243
+0000
 ```
 
 ### Password
@@ -67,7 +68,7 @@ Lightning Electronics
 - Currency
 - Store Logo
 
-### Click the Finish button to complete the setup
+### Click Next, then click Finish to complete the setup
 
 Congratulations! You've successfully configured your Ambrosia Point of Sale system.
 
@@ -108,5 +109,9 @@ Next, we deposit 5k sats into our node:
 ```
 Channel open
 ```
+
+:::warning
+Make sure you create the invoice for 5000 sats to open the channel, otherwise payment could fail
+:::
 
 - Scan it with your lightning wallet and pay
