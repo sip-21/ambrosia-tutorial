@@ -88,30 +88,6 @@ const config = {
                 label: 'Introduction',
                 to: '/',
               },
-              {
-                label: 'Installation',
-                to: '/installation',
-              },
-              {
-                label: 'Configuration',
-                to: '/configuration',
-              },
-              {
-                label: 'Users Management',
-                to: '/users',
-              },
-              {
-                label: 'Products Management',
-                to: '/products',
-              },
-              {
-                label: 'Processing Sales (Cart)',
-                to: '/cart',
-              },
-              {
-                label: 'Wallet',
-                to: '/wallet',
-              },
             ],
           }
         ],
