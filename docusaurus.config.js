@@ -89,28 +89,12 @@ const config = {
                 to: '/',
               },
               {
-                label: 'Installation',
-                to: '/installation',
+                label: 'Quick Start',
+                to: '/quick-start',
               },
               {
-                label: 'Configuration',
-                to: '/configuration',
-              },
-              {
-                label: 'Users Management',
-                to: '/users',
-              },
-              {
-                label: 'Products Management',
-                to: '/products',
-              },
-              {
-                label: 'Processing Sales (Cart)',
-                to: '/cart',
-              },
-              {
-                label: 'Wallet',
-                to: '/wallet',
+                label: 'Other Features',
+                to: '/other-features',
               },
             ],
           }
