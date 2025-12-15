@@ -186,5 +186,5 @@ They are not refundable.
 3. You should see the Ambrosia onboarding screen
 
 :::warning
-You may need to turn off your VPS if page is not loading
+You may need to turn off your VPN if page is not loading
 :::
