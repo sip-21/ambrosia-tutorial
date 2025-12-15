@@ -13,7 +13,6 @@ slug: /quickcart
 
 ## 2. Add Products
 
-### Method A — Browse
 Click **Add** on any product card.
 
 ## 3. Adjust or Remove Items
